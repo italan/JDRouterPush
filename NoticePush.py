@@ -50,7 +50,7 @@ def bark(title, content):
     if res.status_code == 200:
         print("bark推送成功!")
     else:
-        print("bark推送失败!")
+        print(f"bark推送失败!响应码:{res.status_code}")
 
 # tg推送
 def telegram_bot(title, content):
